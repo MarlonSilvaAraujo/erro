@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+
+<head>
+    <meta charset="UTF-8">
+    <title>Carrosel</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+
+    <div class="carousel">
+        <a class="carousel-item" href="#">
+            <div class="testi">
+                <div class="img-area">
+                    <img src="projeto 1.png">
+                </div>
+                <p>"Para a Jurídica Jr, criamos uma página web com design moderno e intuitivo para expor a história da empresa, mostrar os serviços ofertados, parceiros, depoimentos e também apresentar a estrutura organizacional da empresa."</p>
+
+            </div>
+        </a>
+        <a class="carousel-item" href="#">
+            <div class="testi">
+                <div class="img-area">
+                    <img src="projeto 2.png">
+                </div>
+                <p>"Para o Lar e Vida, criamos uma Landing Page que expôs de forma clara e simples o que era a instituição, quais seus propósitos, missão, visão e valores, melhorando a visibilidade digital da entidade."</p>
+
+            </div>
+        </a>
+        <a class="carousel-item" href="#">
+            <div class="testi">
+                <div class="img-area">
+                    <img src="projeto 3.png">
+                </div>
+                <p>"Para a SE7I, a CompJunior desenvolveu um sistema de organização de eventos, onde os membros da comunidade podem explorar as palestras, se inscrever e, ao final do evento, receber seu certificado."</p>
+
+            </div>
+        </a>
+        <a class="carousel-item" href="#">
+            <div class="testi">
+                <div class="img-area">
+                    <img src="projeto 4.png">
+                </div>
+                <p>"COMPweek, um evento 100% online e gratuito, com grandes palestras, cursos e muito networking, que ocorreu nos dias 11, 12, 13, 14 e 15 de outubro."</p>
+
+            </div>
+        </a>
+        <a class="carousel-item" href="#">
+            <div class="testi">
+                <div class="img-area">
+                    <img src="projeto 5.png">
+                </div>
+                <p>"Imersão COMP, um final de semana repleto de dinâmicas, palestras e capacitações, entre elas a revisão da missão, da visão e dos valores da Comp."</p>
+
+            </div>
+        </a>
+
+    </div>
+
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('.carousel').carousel({
+                padding: 200
+            });
+            autoplay();
+
+            function autoplay() {
+                $('.carousel').carousel('next');
+                setTimeout(autoplay, 4500);
+            }
+        });
+    </script>
+</body>
+
+</html>
