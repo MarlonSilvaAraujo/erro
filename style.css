@@ -1,117 +1,104 @@
-/* inicio css da tabela */
-
-* {
-    font-family: 'Poppins';
-}
-
 body {
-    margin: 100px;
-    padding: 0px;
-    background: whitesmoke;
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    background: #e3e9f7;
 }
 
-.main {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+nav ul {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 240px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #111;
 }
 
-.content-table {
-    border-collapse: collapse;
-    margin: 25px 0;
-    font-size: 0.9em;
-    min-width: 400px;
-    border-radius: 5px 5px 0 0;
-    overflow: hidden;
-    box-shadow: 0 0 20px blue;
+nav ul li {
+    list-style: none;
 }
 
-.content-table thead tr {
-    background-color: blue;
-    color: #ffffff;
-    text-align: left;
-    font-weight: bold;
-}
-
-.content-table th,
-.content-table td {
-    padding: 12px 15px;
-}
-
-.content-table tbody tr {
-    border-bottom: 1px solid #dddddd;
-}
-
-.content-table tbody tr:nth-of-type(even) {
-    background-color: #f3f3f3;
-}
-
-.content-table tbody tr:last-of-type {
-    border-bottom: 2px solid blue;
-}
-
-.content-table tbody tr.active-row {
-    font-weight: bold;
-    color: cornflowerblue;
-}
-
-
-/* final css da tabela */
-
-
-/* inicio do css do button */
-
-.button {
-    backface-visibility: hidden;
-    position: relative;
-    cursor: pointer;
-    display: inline-block;
-    white-space: nowrap;
-    background: blue;
-    border-radius: 10px;
-    border: 3px solid #fff;
-    border-width: 3px 3px 3px 3px;
-    padding: 8px 10px 7px 10px;
-    box-shadow: inset 0px 1px 3px blue, inset 0px -1px 3px blue, 0px 3px 6px rgba(0, 0, 0, 0.3);
-    color: #ffffff;
-    font-size: 16px;
-    font-family: Helvetica Neue;
-    font-weight: 900;
-    font-style: normal;
-    text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.3);
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 10px;
-    position: absolute;
-    left: 800px;
-    top: 430px;
-}
-
-.button>div {
-    color: #999;
-    font-size: 10px;
-    font-family: Helvetica Neue;
-    font-weight: initial;
-    font-style: normal;
-    text-align: center;
-    margin: 0px 0px 0px 0px
-}
-
-.button>i {
+nav ul li a {
+    display: block;
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 20px;
     color: #fff;
-    font-size: 1em;
-    border-radius: 0px;
-    border: 0px solid transparent;
-    border-width: 0px 0px 0px 0px;
-    padding: 0px 0px 0px 0px;
-    margin: 0px 0px 0px 0px;
-    position: static
+    position: relative;
+    padding: 10px 0 25px 38px;
 }
 
-.button>.ld {
-    font-size: initial
+nav ul li a:before {
+    content: '';
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    width: 0%;
+    height: 100%;
+    background: #e3e9f7;
+    border-radius: 40px 0px 0px 40px;
+    z-index: -1;
+    transition: all 300ms ease-in-out;
 }
 
+nav ul li a:hover {
+    color: #2b2626;
+}
 
-/* final css do button */
+nav ul li a:hover:before {
+    width: 95%;
+}
+
+.wrapper {
+    margin-left: 260x;
+}
+
+.section {
+    display: grid;
+    place-items: center;
+    min-height: 100vh;
+    text-align: center;
+}
+
+.box-area h2 {
+    text-transform: uppercase;
+    font-size: 50px;
+}
+
+.box-area p {
+    line-height: 2;
+}
+
+.box-area {
+    width: 75%;
+}
+
+.logo {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 0px auto;
+}
+
+.logo img {
+    width: 100%;
+}
+
+.text {
+    position: absolute;
+    left: 20.98%;
+    right: 22.99%;
+    top: 89%;
+    bottom: 5.37%;
+    font-family: 'Noto Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 10px;
+    text-align: center;
+    color: #FAFBFF;
+}
